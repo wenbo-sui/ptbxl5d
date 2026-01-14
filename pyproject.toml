@@ -6,24 +6,25 @@ authors = [
     {name = "wenbo"}
 ]
 readme = "README.md"
-requires-python = ">=2.7"
+requires-python = ">=3.11,<3.13"
 dependencies = [
     "wfdb (>=4.3.0,<5.0.0)",
     "pandas (>=2.3.3,<3.0.0)",
-    "numpy (>=2.4.0,<3.0.0)",
+    "numpy (>=1.26.4,<2.1.0)",
     "scipy (>=1.16.3,<2.0.0)",
     "tqdm (>=4.67.1,<5.0.0)",
-    "torch (>=2.9.1,<3.0.0)",
-    "scikit-learn (>=1.8.0,<2.0.0)",
-    "umap-learn (>=0.5.9.post2,<0.6.0)",
+    "torch (>=2.4.0)",
+    "scikit-learn (>=1.5.0,<2.0.0)",
+    "umap-learn (>=0.5.7)",
     "matplotlib (>=3.10.8,<4.0.0)",
     "seaborn (>=0.13.2,<0.14.0)"
 ]
 
 [tool.poetry]
+package-mode = false
 
 [tool.poetry.group.dev.dependencies]
-ipykernel = "^7.1.0"
+ipykernel = "^6.29.0"
 fastdtw = "^0.3.4"
 pyyaml = "^6.0.3"
 
